@@ -18,7 +18,7 @@
 <body>
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <img src="images/logo.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,13 +32,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Product</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -131,7 +131,7 @@
         </section>
 
         <!-- shoes section -->
-        <section class="container">
+        <section class="container" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -184,7 +184,7 @@
         </section>
 
         <!-- backpack section -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -235,10 +235,25 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
+        <!-- subscribe section -->
+        <section style="height: 300px;"
+            class="container bg-info d-flex justify-content-center align-items-center rounded-3 my-5" id="subscribe">
+            <div my-5>
+                <h1>Let's stay in touch</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input type="text" placeholder="Enter email">
+                <br>
+                <button class="btn btn-warning">Submit</button>
+            </div>
 
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer text-center>
+        <p><small> © 2021. Panda Commerce. ALl rights reserved. Barishal, Bangladesh.<small></p>
     </footer>
+
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
